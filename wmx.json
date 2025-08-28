@@ -1,0 +1,66 @@
+{
+  "name": "otpinput",
+  "displayName": "OTP Input",
+  "description": "A React Native component for entering one-time passwords (OTP) with multiple input boxes. Each input value is centered in its box. Supports focus, blur, key press, and delete events.",
+  "iconUrl": "icon.svg",
+  "webSupport": true,
+  "props": {
+    "value": {
+      "name": "value",
+      "displayName": "Value",
+      "description": "Current OTP value as a string.",
+      "type": "string"
+    },
+    "length": {
+      "name": "length",
+      "displayName": "Length",
+      "description": "Number of OTP input boxes.",
+      "type": "number"
+    },
+    "style": {
+      "name": "style",
+      "displayName": "Style",
+      "description": "Custom style for the OTP input container.",
+      "type": "object"
+    },
+    "boxStyle": {
+      "name": "boxStyle",
+      "displayName": "Box Style",
+      "description": "Custom style for each OTP input box. To center the value, use { textAlign: 'center' }.",
+      "type": "object"
+    }
+  },
+  "events": {
+    "onChange": {
+      "name": "onChange",
+      "displayName": "On Change",
+      "description": "Callback when the OTP value changes. Returns the new value as a string.",
+      "type": "object"
+    },
+    "onFocus": {
+      "name": "onFocus",
+      "displayName": "On Focus",
+      "description": "Callback when an input box receives focus. Returns the index of the focused box.",
+      "type": "object"
+    },
+    "onBlur": {
+      "name": "onBlur",
+      "displayName": "On Blur",
+      "description": "Callback when an input box loses focus. Returns the index of the blurred box.",
+      "type": "object"
+    },
+    "onKeyPress": {
+      "name": "onKeyPress",
+      "displayName": "On Key Press",
+      "description": "Callback when a key is pressed in any input box. Returns the key pressed and the box index.",
+      "type": "object"
+    },
+    "onDelete": {
+      "name": "onDelete",
+      "displayName": "On Delete",
+      "description": "Callback when the delete key is pressed. Returns the index of the box where delete was pressed.",
+      "type": "object"
+    }
+  },
+  "styles": {}
+} 
